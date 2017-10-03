@@ -1,0 +1,96 @@
+body {
+	background-image: url(https://html-templates.info/images/pages/140520040122.jpg);
+
+}
+
+.table_blur {
+  background: #f5ffff;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 0 auto;
+  	opacity: 0.9;
+  	 text-shadow: white 0 0 2px;
+    font-family: comic sans ms;
+}
+.table_blur th {
+  border-top: 1px solid #777777;	
+  border-bottom: 1px solid #777777; 
+  box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
+  background: linear-gradient(#9595b6, #5a567f);
+  color: white;
+  padding: 10px 15px;
+  position: relative;
+}
+.table_blur th:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 25%;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255,255,255,.08));
+}
+.table_blur tr:nth-child(odd) {
+  background: #ebf3f9;
+}
+.table_blur th:first-child {
+  border-left: 1px solid #777777;	
+  border-bottom:  1px solid #777777;
+  box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+.table_blur th:last-child {
+  border-right: 1px solid #777777;
+  border-bottom:  1px solid #777777;
+  box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+.table_blur td {
+  border: 4px solid #e3eef7;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.table_blur tbody:hover td {
+  color: transparent;
+  text-shadow: 0 0 3px #a09f9d;
+}
+.table_blur tbody:hover tr:hover td {
+  color: #444444;
+  text-shadow: none;
+}
+
+
+h1 {
+	text-align: center;
+	color: black;
+   text-shadow: white 0 0 2px;
+    font-family: comic sans ms;
+
+}
+
+
+.hub-i-count {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    min-width: 23px;
+    height: 23px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1px 2px;
+    font-size: 17px;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+    background: #fb3f4c;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.card {
+	position: relative;
+	left: 1270px;
+
+}
+
+.
