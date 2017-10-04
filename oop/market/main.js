@@ -22,13 +22,14 @@ Item.prototype.AddToHTML = function() {
 	var buyNow = document.createElement("td");
 
 	var buyNowButton = document.createElement("button");
+	buyNowButton.style.width="80px"
 
 
 	var pltext = document.createTextNode( this.place);
 	var natext = document.createTextNode( this.name);
 	var prtext = document.createTextNode( this.price);
 	var wetext = document.createTextNode( this.weight);
-	var valueOfBuyNow = document.createTextNode( "Купити");
+	var valueOfBuyNow = document.createTextNode(  "  \u0020 \u0020Купити  \u0020\u0020\u0020\u0020\u0020");
 	
 	buyNowButton.appendChild(valueOfBuyNow);
 	
@@ -68,28 +69,22 @@ var cellphone14= new Item(14 ,"Apple iPhone 7 32GB Black", 17999, 125);
 var cellphone15= new Item(15, "Motorola MOTO G5 (XT1676) Grey", 4995, 157);
 
 
-function w () {
-	var a = document.getElementsByTagName("button");
-	
-
-	for (var i = 0 ; i < a.length; i++ ) {
-		
-			var onebutton = a[i];
-			
-	};
-
-	document.body.addEventListener("click", function(e){
+function w() {
+    var a = document.getElementsByTagName("button");
 
 
-			if (onebutton) {
+    for (var i = 0; i < a.length; i++)(function(i) {
 
-				onebutton.innerHTML = " добавлено в корзинку";
-			}
-	});
 
-			
-	
+        var onebutton = a[i];
+
+        onebutton.onclick = function() {
+            onebutton.innerHTML = "В корзині";
+
+        }
+    })(i);
+
+
 }
 
 w();
-
