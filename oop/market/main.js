@@ -22,7 +22,7 @@ Item.prototype.AddToHTML = function() {
 	var buyNow = document.createElement("td");
 
 	var buyNowButton = document.createElement("button");
-	buyNowButton.style.width="80px"
+	buyNowButton.style.width="80px";
 
 
 	var pltext = document.createTextNode( this.place);
@@ -71,20 +71,71 @@ var cellphone15= new Item(15, "Motorola MOTO G5 (XT1676) Grey", 4995, 157);
 
 function w() {
     var a = document.getElementsByTagName("button");
+    var redCircl = document.getElementById("icon");
 
-
-    for (var i = 0; i < a.length; i++)(function(i) {
+    	
+    for (var i = 0; i < a.length; i++)  (function(i) {
 
 
         var onebutton = a[i];
-
+     
+       
         onebutton.onclick = function() {
             onebutton.innerHTML = "В корзині";
-
-        }
+            	// redCircl.style.display="inline";
+              // redCircl.innerHTML = d;
+		
+		}
     })(i);
 
 
+
+
+for (d = 1;  d< 15; d++)(function(d) {
+
+
+        var onebutton = a[d];
+
+        onebutton.onclick = function() {
+            redCircl.style.display="inline";
+             redCircl.innerHTML = (d);
+
+
+        
+        }
+    })(d);
+
+
+
+	
 }
 
+
+
+// function h() {
+//  var a = document.getElementsByTagName("button");
+//  var redCircl = document.getElementById("icon");
+// for (d = 1;  d< 15; d++)(function(d) {
+
+
+//         var onebutton = a[d];
+
+//         onebutton.onclick = function() {
+//             redCircl.style.display="inline";
+//              redCircl.innerHTML = (d);
+
+
+        
+//         }
+//     })(d);
+
+
+
+// }
+
+
+
 w();
+// h();
+
+ 
