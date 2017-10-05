@@ -67,21 +67,27 @@ var cellphone12= new Item(12, "Sony Xperia X Dual Black", 6999, 195);
 var cellphone13= new Item(13, "Meizu M5C 2/16GB Black (Міжнародна версія)", 2688, 159);
 var cellphone14= new Item(14 ,"Apple iPhone 7 32GB Black", 17999, 125);
 var cellphone15= new Item(15, "Motorola MOTO G5 (XT1676) Grey", 4995, 157);
+
+
+
+var a = document.getElementsByTagName("button");
+var redCircl = document.getElementById("icon");
 var count = 0;
+var box = document.getElementById("box");
+var emptyBox = document.getElementById("trash");
+
+
 
 function w() {
-    var a = document.getElementsByTagName("button");
-    var redCircl = document.getElementById("icon");
-
-
+ 
     for (var i = 0; i < a.length; i++)(function(i) {
 
         var onebutton = a[i];
 
         onebutton.onclick = function() {
 
-            var innerBotton = onebutton.innerHTML = "В корзині";
-            redCircl.style.display = "inline";
+            var innerBotton = onebutton.innerHTML = "У кошику";
+            var nonebox = redCircl.style.display = "inline";
 
             if (innerBotton) {
 
@@ -92,4 +98,32 @@ function w() {
     })(i);
 }
 
+function hower(){
+
+	var nonebox = redCircl.style.display = "none";
+
+	if(nonebox){
+
+		
+			box.onmouseover = function(){
+
+					emptyBox.style.display = "block";
+
+			};
+
+			box.onmouseout = function(){
+
+					emptyBox.style.display = "none";
+
+			};
+
+
+
+
+		};
+
+	}
+
+
 w();
+hower();
